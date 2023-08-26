@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,300;10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-100: #8B5FBF;
+    --primary-200: #61398F;
+    --primary-300: #FFFFFF;
+    --accent-100: #D6C6E1;
+    --accent-200: #9A73B5;
+    --text-100: #4A4A4A;
+    --text-200: #878787;
+    --bg-100: #F5F3F7;
+    --bg-200: #E9E4ED;
+    --bg-300: #FFFFFF;
+
+
+    /* --primary-100:#FF4081;
+ --primary-200:#ff79b0;
+ --primary-300:#ffe4ff;
+ --accent-100:#00E5FF;
+ --accent-200:#00829b;
+ --text-100:#333333;
+ --text-200:#5c5c5c;
+ --bg-100:#F5F5F5;
+ --bg-200:#ebebeb;
+ --bg-300:#c2c2c2; */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--bg-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+span {
+    color: var(--accent-200);
+}
+
+hr {
+    border-top: 5px solid var(--accent-200);
+    border-radius: 10px;
+    width: 90vw;
+}
+
+.boasvindas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    background-color: var(--bg-200);
+    box-shadow: 5px 5px 5px solid var(--text-100);
+}
+
+.textos-boasvindas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#titulo-boasvindas {
+    font-family: 'Bricolage Grotesque';
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--text-100);
+}
+
+#texto-boasvindas {
+    font-family: 'Roboto Slab';
+    font-size: 1.5em;
+    color: var(--text-200);
+    text-align: center;
+}
+
+.imgs {
+    margin: 20px;
+    width: 80vw;
+    background-color: var(--bg-200);
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.imgs-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.imgs-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+}
+
+.titulo-imgs {
+    font-family: 'Bricolage Grotesque';
+    font-size: 1.4em;
+    font-weight: 800;
+    color: var(--primary-100);
+}
+
+.desc-imgs {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--text-100);
+}
+
+.foto-imgs {
+    width: 250px;
+    height: 250px;
+    box-shadow: 6px 6px 0px 0px var(--accent-200);
+    object-fit: cover;
+}
+
+.galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textos-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hr-galeria {
+    width: 30vw;
+}
+
+.titulo-galeria {
+    font-family: 'Bricolage Grotesque';
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--text-100);
+}
+
+.desc-galeria {
+    font-family: 'Roboto Slab';
+    font-size: 1.3em;
+    color: var(--text-100);
+    text-align: center;
+}
+
+.galeria-fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.foto-galeria {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: .6s;
+    backdrop-filter: grayscale(1);
+}
+
+.foto-galeria:hover {
+    filter: grayscale(0);
+}
+
+.carta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textos-carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.titulo-carta {
+    font-family: 'Bricolage Grotesque';
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--text-100);
+}
+
+.desc-carta {
+    font-family: 'Roboto Slab';
+    font-size: 1.3em;
+    color: var(--text-100);
+}
+
+.mensagem-carta {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    padding: 30px;
+    gap: 20px;
+    background-color: var(--bg-200);
+}
+
+.mensagem-carta-texto {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.1em;
+    color: var(--text-300);
+}
+
+@media screen and (max-width:600px) {
+    .imgs-2 {
+        justify-content: center;
+    }
+
+    .imgs-1 {
+        justify-content: center;
+    }
+
+    .imgs-1 {
+        flex-wrap: wrap;
+    }
+
+    .imgs-2 {
+        flex-wrap: wrap;
+    }
+
+
+}
